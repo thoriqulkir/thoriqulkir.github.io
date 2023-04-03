@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beli Tiket</title>
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-dKjXkE3Y+yC3zDwTNtOdDhj1hrGtvNJd6nEhLb8yhvJ9FXcV7nYu+mnWQn8CvKg86LP7V6C0yy51ZxbMvpl9eQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://kit.fontawesome.com/12aef957a4.js" crossorigin="anonymous"></script>
+  </head>
+
+  <body>
+    <header>
+      <div class="logo">
+        <a href="home.html"><img src="foto/logo.png" alt="Logo Website"></a>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#blog">Blog</a></li>
+          <li><a href="creator.html">Creator</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="#contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="login">
+        <ul>
+          <li><button class="login-btn" id="login-btn">Login</button></li>
+          <li><button class="regis-btn" id="regis-btn">Register</button></li>
+        </ul>
+      </div>
+    </header>
+
+    <div class="popup" id="popup">
+      <div class="konten-login">
+        <div class="kotak-login">
+          <img class="logo" src="foto/logo.png">
+          <h1>LOG IN</h1>
+          <form action="home.html" method="post" id="login-form">
+            <label for="username">Username : </label>
+            <input type="text" name="username" id="username" placeholder="Masukkan username kamu" required>
+  
+            <label for="password">Password : </label>
+            <input type="password" name="password" id="password" placeholder="Masukkan password kamu" required>
+  
+            <button type="Submit">Log In</button>
+          </form>
+          <p id="link-register">Gak punya akun? Langsung <a href="#">registrasi</a> kuy!</a></p>
+        </div>
+      </div>
+      <div class="konten-regis">
+        <div class="kotak-regis">
+          <img class="logo" src="foto/logo.png">
+          <h1>REGISTRASI</h1>
+          <form action="login.html" method="post" id="register-form">
+            <label for="name">Nama Pengguna : </label>
+            <input type="text" name="first_name" placeholder="Akan digunakan sebagai username akun" required>
+  
+            <label for="email">Email : </label>
+            <input type="email" name="email" placeholder="....@gmail.com" required autocomplete="off">
+  
+            <label for="nomor_telepon">Nomor Telepon : </label>
+            <input type="tel" name="nomor_telepon" placeholder="+62xxx" required autofocus>
+  
+            <label for="password">Password : </label>
+            <input type="password" name="password" id="password" placeholder="Minimal 8 karakter" required minlength="8"
+              maxlength="16">
+  
+            <label for="confirm_password">Konfirmasi Password : </label>
+            <input type="password" name="confirm_password" id="confirmpass" placeholder="Konfirmasi Kembali Password"
+              required minlength="8" maxlength="20">
+  
+            <label for="agreement">
+              <input type="checkbox" id="agreement" name="agreement">
+              Saya menyetujui syarat & ketentuan yang berlaku.
+            </label>
+  
+            <button type="Submit">Daftar</button>
+          </form>
+          <p id="link-login">Udah punya akun? Langsung aja <a href="#">login!</a></p>
+        </div>
+      </div>
+    </div>
+
+    <main>
+      <div class="description">
+        <h1>
+          <span class="big-text">Beli Tiket</span><br>
+          <span class="normal-text">Temukan berbagai macam event menarik dan beli tiketnya dengan mudah!</span>
+        </h1>
+      </div>
+
+  <!-- Search Bar -->
+  <div class="search-container">
+    <div class="search-bar">
+      <form class="form-search">
+        <input type="text" name="search" placeholder="Cari event...">
+        <input type="text" name="place" placeholder="Tempat Event...">
+        <input type="date" name="time">
+        <button type="submit">Cari</button>
+      </form>
+    </div>
+  </div>
+
+<!-- Upcoming Event -->
+    <div class="upcoming-events">
+      <div class="upcoming-events-header">
+        <h2>Upcoming Event</h2>
+        <a href="event.html" class="view-all">View All</a>
+      </div>
+      <div class="event-list upcoming-events-container">
+        <div class="event upcoming-event">
+          <div class="event-image" style="background-image: url('foto/1.jpg');"></div>
+          <div class="event-info">
+            <div class="event-date">
+              <span class="event-month">AUG</span>
+              <span class="event-day">10</span>
+            </div>
+            <div class="event-description">
+              <h3>Konserin Aja</h3>
+              <p>Location: Jakarta</p>
+              <a href="detail-event1.html">Buy Tickets</a>
+            </div>
+          </div>
+        </div>
+        <div class="event upcoming-event">
+          <div class="event-image" style="background-image: url('foto/2.jpg');"></div>
+          <div class="event-info">
+            <div class="event-date">
+              <span class="event-month">AUG</span>
+              <span class="event-day">15</span>
+            </div>
+            <div class="event-description">
+              <h3>Seminar Theater</h3>
+              <p>Location: Surabaya</p>
+              <a href="detail-event2.html">Buy Tickets</a>
+            </div>
+          </div>
+        </div>
+        <div class="event upcoming-event">
+          <div class="event-image" style="background-image: url('foto/3.jpg');"></div>
+          <div class="event-info">
+            <div class="event-date">
+              <span class="event-month">AUG</span>
+              <span class="event-day">20</span>
+            </div>
+            <div class="event-description">
+              <h3>Seminar Pemrograman</h3>
+              <p>Location: Bandung</p>
+              <a href="detail-event3.html">Buy Tickets</a>
+            </div>
+          </div>
+        </div>
+        <div class="event upcoming-event">
+          <div class="event-image" style="background-image: url('foto/4.jpg');"></div>
+          <div class="event-info">
+            <div class="event-date">
+              <span class="event-month">AUG</span>
+              <span class="event-day">20</span>
+            </div>
+            <div class="event-description">
+              <h3>Event Title</h3>
+              <p>Location: Bandung</p>
+              <a href="#">Buy Tickets</a>
+            </div>
+          </div>
+        </div>
+        <div class="event upcoming-event">
+          <div class="event-image" style="background-image: url('foto/5.jpg');"></div>
+          <div class="event-info">
+            <div class="event-date">
+              <span class="event-month">AUG</span>
+              <span class="event-day">20</span>
+            </div>
+            <div class="event-description">
+              <h3>Event Title</h3>
+              <p>Location: Bandung</p>
+              <a href="#">Buy Tickets</a>
+            </div>
+          </div>
+        </div>
+        <div class="event upcoming-event">
+          <div class="event-image" style="background-image: url('foto/6.jpg');"></div>
+          <div class="event-info">
+            <div class="event-date">
+              <span class="event-month">AUG</span>
+              <span class="event-day">20</span>
+            </div>
+            <div class="event-description">
+              <h3>Event Title</h3>
+              <p>Location: Bandung</p>
+              <a href="#">Buy Tickets</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+      <!-- Kategori -->
+      <section id="kategori">
+        <h2>Kategori</h2>
+        <div class="category-container">
+          <ul class="category-list" id="category-list">
+            <li>
+              <a href="konser.html">
+                <img src="foto/konser.jpg" alt="Konser">
+                <span>Konser</span></a>
+            </li>
+            <li>
+              <a href="seminar.html">
+                <img src="foto/seminar.jpg" alt="Seminar">
+                <span>Seminar</span></a>
+            </li>
+            <li>
+              <a href="education.html">
+                <img src="foto/education.jpg" alt="Education">
+                <span>Education</span></a>
+            </li>
+            <li>
+              <a href="konser.html">
+                <img src="foto/konser.jpg" alt="Konser">
+                <span>Konser</span></a>
+            </li>
+            <li>
+              <a href="seminar.html">
+                <img src="foto/seminar.jpg" alt="Seminar">
+                <span>Seminar</span></a>
+            </li>
+            <li>
+              <a href="education.html">
+                <img src="foto/education.jpg" alt="Education">
+                <span>Education</span></a>
+            </li>
+            <li>
+              <a href="konser.html">
+                <img src="foto/konser.jpg" alt="Konser">
+                <span>Konser</span></a>
+            </li>
+            <li>
+              <a href="seminar.html">
+                <img src="foto/seminar.jpg" alt="Seminar">
+                <span>Seminar</span></a>
+            </li>
+            <li>
+              <a href="education.html">
+                <img src="foto/education.jpg" alt="Education">
+                <span>Education</span></a>
+            </li>
+            <li>
+              <a href="pagelaran.html">
+                <img src="pagelaran.jpg" alt="Pagelaran">
+                <span>Pagelaran</span></a>
+            </li>
+          </ul>
+          <button class="category-button category-button-prev" id="category-button-prev">&#8249;</button>
+          <button class="category-button category-button-next" id="category-button-next">&#8250;</button>
+        </div>
+    </section>
+
+    <!--Buat Event-->
+    <div class="create-event-container">
+      <img src="foto/image 3.png" alt="Create Event">
+      <div class="create-event-info">
+        <h3>Buat event anda disini</h3>
+        <p>Buat event yang menarik dan dapat menjangkau banyak orang.</p>
+        <a href="buat event.html" class="create-event-button">
+          <span>Buat Events</span>
+        </a>
+      </div>
+    </div>
+     
+     
+    <!-- Blog -->
+    <section id="blog">
+      <h2>Blog</h2>
+      <div class="blog">
+      <div class="blog-post">
+        <a href="blog-post1.html">
+          <img src="foto/b1.jpg" alt="Blog Post">
+          <div class="blog-content">
+            <div class="title">
+              <h3>Blog Title</h3>
+            </div>
+            <div class="desc">
+              <p>Terlihat sekelompok orang yang berkumpul dan menikmati musik dengan antusias. 
+              Suasana yang tercipta sangat hidup dan penuh semangat, diiringi dengan dentuman musik yang menggema. 
+              Tidak hanya itu, pencahayaan dan tata panggung yang disajikan juga sangat memukau, membuat konser semakin meriah.</p>
+            </div>
+            <div class="date">
+              <p>5 August 2022</p>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="blog-post">
+        <a href="blog-post2.html">
+          <img src="foto/b2.jpg" alt="Blog Post">
+          <div class="blog-content">
+            <div class="title">
+              <h3>Blog Title</h3>
+            </div>
+            <div class="desc">
+              <p>Terlihat sekelompok orang yang berkumpul dan menikmati musik dengan antusias. 
+              Suasana yang tercipta sangat hidup dan penuh semangat, diiringi dengan dentuman musik yang menggema. 
+              Tidak hanya itu, pencahayaan dan tata panggung yang disajikan juga sangat memukau, membuat konser semakin meriah.</p>
+            </div>
+            <div class="date">
+              <p>5 August 2022</p>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="blog-post">
+        <a href="blog-post3.html">
+          <img src="foto/b3.jpg" alt="Blog Post">
+          <div class="blog-content">
+            <div class="title">
+              <h3>Blog Title</h3>
+            </div>
+            <div class="desc">
+              <p>Terlihat sekelompok orang yang berkumpul dan menikmati musik dengan antusias. 
+              Suasana yang tercipta sangat hidup dan penuh semangat, diiringi dengan dentuman musik yang menggema. 
+              Tidak hanya itu, pencahayaan dan tata panggung yang disajikan juga sangat memukau, membuat konser semakin meriah.</p>
+            </div>
+            <div class="date">
+              <p>5 August 2022</p>
+            </div>
+          </div>
+        </a>
+      </div>
+    </section>
+    <div class="load-more-container">
+      <button class="load-more-button">Load More</button>
+    </div>
+
+    <!--Kemitraan-->
+    <section class="kemitraan">
+      <div class="container">
+        <h2>Kemitraan</h2>
+        <p>Deskripsi</p>
+        <div class="kemitraan-list">
+          <div class="kemitraan-item">
+            <img src="foto/image 4.png" alt="Kemitraan 1">
+          </div>
+          <div class="kemitraan-item">
+            <img src="foto/image 5.png" alt="Kemitraan 2">
+          </div>
+          <div class="kemitraan-item">
+            <img src="foto/image 14.png" alt="Kemitraan 3">
+            </div>
+          <div class="kemitraan-item">
+            <img src="foto/image 15.png" alt="Kemitraan 3">
+            </div>
+          <div class="kemitraan-item">
+            <img src="foto/image 17.png" alt="Kemitraan 3">
+          </div>
+          <div class="kemitraan-item">
+            <img src="foto/image 18.png" alt="Kemitraan 3">
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!--Footer-->
+    <footer>
+      <div class="footer-top">
+        <div class="logo">
+          <img src="foto/logo.png" alt="logo" />
+        </div>
+        <div class="contact-info">
+          <div class="contact-item">
+            <div class="contact-icon">
+              <i class="fa fa-whatsapp"></i>
+            </div>
+            <div class="contact-text">
+              WhatsApp<br>
+              0858 1150 0888
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon">
+              <i class="fa fa-envelope"></i>
+            </div>
+            <div class="contact-text">
+              Email<br>
+              cs@belitiket.com
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon">
+              <i class="fa fa-phone"></i>
+            </div>
+            <div class="contact-text">
+              Pusat Panggilan<br>
+              0804 1500 878
+            </div>
+          </div>
+        </div>
+        <div class="social-media">
+          <a href="#"><i class="fab fa-facebook"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+      <div class="footer-mid">
+        <div class="location">
+          <h3>Lokasi Event</h3>
+          <ul>
+            <li>Jakarta</li>
+            <li>Bandung</li>
+            <li>Yogyakarta</li>
+            <li>Surabaya</li>
+            <li>Solo</li>
+            <li>Medan</li>
+            <li>Bali</li>
+            <li>Semua Kota</li>
+          </ul>
+        </div>
+        <div class="event-category">
+          <h3>Inspirasi Event</h3>
+          <ul>
+            <li>Festival</li>
+            <li>Konser</li>
+            <li>Olahraga</li>
+            <li>Workshop &amp; Seminar</li>
+            <li>Teater &amp; Drama</li>
+            <li>Atraksi</li>
+            <li>Semua Kategori</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <ul>
+          <li><a href="#">Tentang Kami</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Karir</a></li>
+          <li><a href="#">Kebijakan Privasi</a></li>
+          <li><a href="#">Kebijakan Cookie</a></li>
+          <li><a href="#">Panduan</a></li>
+          <li><a href="#">Hubungi Kami</a></li>
+          <li><a href="#">Pengaturan Cookie</a></li>
+        </ul>
+      </div>
+    </footer> 
+    <script src="home.js"></script>
+  </body>
+</html>

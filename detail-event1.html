@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detail Event</title>
+    <link rel="stylesheet" href="detail-event.css">
+    <script src="https://kit.fontawesome.com/12aef957a4.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav id="navBar" class="na">
+        <a href="home.html"><img src="foto/logo.png" class="logo"></a>
+        <ul class="nav-links">
+            <li><a href="home.html" class="active">Home</a></li>
+            <li><a href="#" class="active">Create</a></li>
+            <li><a href="#" class="active">About</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <div class="e-detail">
+            <div class="left-col">
+                <h1>KONSER MUSIK</h1>
+                <div class="evnt">
+                    <div class="e-img">
+                        <img src="foto/1.jpg">
+                    </div>
+                    <div class="e-info">
+                        <p>Jakarta</p>
+                        <h3>KONSERIN AJAH</h3>
+                        <p>Gelora Bung Karno</p>
+                        <p>10/Agustus/2023</p>
+                        <p>17:00 WIB s.d 23:00 WIB</p>
+                        <div class="e-harga">
+                            <p>1000+ tickets</p>
+                            <h4>Rp. 1.000.000 <span>/ ticket</span></h4>
+                        </div>
+                    </div>
+                    <div class="e-desc">
+                        <hr>
+                        <h3>Deskripsi</h3>
+                        <p>Konser musik yang digelar pada malam hari ini di Stadion Gelora Bung Karno Jakarta menjadi momen yang sangat 
+                           ditunggu-tunggu oleh para penggemar musik di Indonesia. Acara yang dihadiri oleh ratusan ribu orang ini menampilkan
+                           penampilan dari beberapa musisi papan atas Indonesia.</p>
+                        <p>Panggung yang megah dipenuhi dengan cahaya sorot yang indah dan musik yang menggema membuat atmosfer di 
+                            Stadion Gelora Bung Karno semakin meriah. Pada saat yang tepat, band legendaris Indonesia, Slank, tampil di atas panggung
+                            dengan memukau penonton dengan lagu-lagu hits mereka seperti "Pandangan Pertama" dan "Terlalu Manis". Para penggemar yang
+                            hadir benar-benar merasakan kegembiraan dan terpana dengan penampilan Slank yang luar biasa.
+                        </p>
+                        <p>Selain itu, ada juga penampilan dari musisi muda berbakat seperti Raisa, GAC dan Isyana Sarasvati yang memukau penonton
+                            dengan suara merdu mereka dan kepiawaian mereka dalam bermusik. Para penggemar musik sangat terkesan dengan penampilan
+                            mereka dan merasa puas dengan acara ini. 
+                        </p>
+                        <p>Secara keseluruhan, konser musik ini berhasil memberikan pengalaman yang tak terlupakan bagi para penggemar musik di Indonesia.
+                            Kombinasi antara penampilan panggung yang spektakuler, cahaya sorot yang indah, dan musik yang menghentak membuat acara ini
+                            menjadi sukses besar dan memberikan kenangan yang tak terlupakan bagi seluruh penonton yang hadir.
+                        </p>
+                    </div>
+                </div>
+                </div>
+                <div class="right-col">
+                    <div class="sidebar">
+                        <h2>Tickets</h2>
+                        <h3>Type :</h3>
+                        <div class="type-t">
+                            <input type="checkbox" name="pilih" onclick="return myfun()"> <p>VVIP</p> <span>(100)</span>
+                        </div>
+                        <div class="type-t">
+                            <input type="checkbox" name="pilih" onclick="return myfun()"> <p>VIP</p> <span>(150)</span>
+                        </div>
+                        <div class="type-t">
+                            <input type="checkbox" name="pilih" onclick="return myfun()"> <p>Gold</p> <span>(400)</span>
+                        </div>
+                        <div class="type-t">
+                            <input type="checkbox" name="pilih" onclick="return myfun()"> <p>Reguler</p> <span>(550)</span>
+                        </div>
+                        <div class="wrapper">
+                            <span class="minus">-</span>
+                            <span class="num">0</span>
+                            <span class="plus">+</span>
+                        </div>
+                        <div>
+                            <span id="notvalid"> </span>
+                        </div>
+                        <div class="buy">
+                            <a href="#">Purchase</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-top">
+          <div class="logo">
+            <img src="foto/logo.png" alt="logo" />
+          </div>
+          <div class="contact-info">
+            <div class="contact-item">
+              <div class="contact-icon">
+                <i class="fa fa-whatsapp"></i>
+              </div>
+              <div class="contact-text">
+                WhatsApp<br>
+                0858 1150 0888
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon">
+                <i class="fa fa-envelope"></i>
+              </div>
+              <div class="contact-text">
+                Email<br>
+                cs@belitiket.com
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon">
+                <i class="fa fa-phone"></i>
+              </div>
+              <div class="contact-text">
+                Pusat Panggilan<br>
+                0804 1500 878
+              </div>
+            </div>
+          </div>
+          <div class="social-media">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+        <div class="footer-mid">
+          <div class="location">
+            <h3>Lokasi Event</h3>
+            <ul>
+              <li>Jakarta</li>
+              <li>Bandung</li>
+              <li>Yogyakarta</li>
+              <li>Surabaya</li>
+              <li>Solo</li>
+              <li>Medan</li>
+              <li>Bali</li>
+              <li>Semua Kota</li>
+            </ul>
+          </div>
+          <div class="event-category">
+            <h3>Inspirasi Event</h3>
+            <ul>
+              <li>Festival</li>
+              <li>Konser</li>
+              <li>Olahraga</li>
+              <li>Workshop &amp; Seminar</li>
+              <li>Teater &amp; Drama</li>
+              <li>Atraksi</li>
+              <li>Semua Kategori</li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <ul>
+            <li><a href="#">Tentang Kami</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Karir</a></li>
+            <li><a href="#">Kebijakan Privasi</a></li>
+            <li><a href="#">Kebijakan Cookie</a></li>
+            <li><a href="#">Panduan</a></li>
+            <li><a href="#">Hubungi Kami</a></li>
+            <li><a href="#">Pengaturan Cookie</a></li>
+          </ul>
+        </div>
+      </footer>
+
+    <script src="detail-event.js"></script>
+</body>
+</html>

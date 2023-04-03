@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Detail Pesanan Tiket Event</title>
+
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,700;1,700&family=Roboto:wght@100&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- feather icons -->
+    <script src="https://unpkg.com/feather-icons"></script>
+
+    <!-- style -->
+    <link rel="stylesheet" href="pesanan.css" />
+  </head>
+  <body>
+    <!-- Navbar start-->
+    <nav class="navbar">
+      <a href="#" class="navbar-logo"><img src="foto/logo.png" /></a>
+
+      <div class="navbar-nav">
+        <a href="#">blog</a>
+        <a href="#">Creat</a>
+        <a href="#">About</a>
+      </div>
+
+      <div class="navbar-extra">
+        <a href="#" id="hamburger-menu"><i data-feather="menu"></i></a>
+      </div>
+    </nav>
+    <!-- Navbar end -->
+
+    <!-- content -->
+    <!-- container-kiri start -->
+    <section class="main">
+      <div class="tengah">
+        <div class="judul">
+          <button>
+            <h2><i data-feather="chevron-left"></i></h2>
+            <a href="detail-event1.html"></a>
+          </button>
+          <h2 id="judul-h2">Detail Pembelian</h2>
+        </div>
+        <div class="container-kiri">
+          <div class="Detail-tiket">
+            <div class="detail-evet">
+              <h2 id="judul-item">Judul-event</h2>
+              <br />
+              <br />
+              <h4 id="price">IDR 1.000.000</h4>
+              <br />
+              <br />
+              <hr id="hr-price" />
+              <br />
+              <div class="tablekiri1">
+                <table class="tabledtl">
+                  <tr>
+                    <td><img src="foto/lokasi.png" id="pic-lks" /></td>
+                    <td><h5 id="lokasi-h5">Gelora Bungkarno</h5></td>
+                  </tr>
+                  <tr>
+                    <td><img src="foto/time.png" id="pic-valid" /></td>
+                    <td>
+                      <h5 id="valid-h5">10/Agustus/2023</h5>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><img src="foto/refund.png" id="pic-refund" /></td>
+                    <td><h5 id="refund-h5">Tidak bisa refund</h5></td>
+                  </tr>
+                </table>
+                <br />
+                <br />
+                <br />
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- container-kiri end -->
+
+        <!--container-kanan1 start-->
+        <div class="container-kanan1">
+          <form>
+            <div class="namaDpn-input">
+              <label> Nama Depan</label>
+              <input
+                type="text"
+                id="nama-cstmr"
+                placeholder="Masukkan Nama Anda"
+              />
+            </div>
+            <div>
+              <label> Nama Belakang</label>
+              <input
+                type="text"
+                id="nama-cstmr"
+                placeholder="Masukkan Nama Anda"
+              />
+            </div>
+          </form>
+        </div>
+        <!-- container-kanan1 end -->
+
+        <!-- container-kanan2 -->
+        <div class="container-kanan2">
+          <div class="jmlh-tkt">
+            <h4 id="jmlhtiket-h4">Jumlah tiket</h4>
+            <br />
+            <div class="konten2">
+              <div class="pax">
+                <h4 id="pax-h4">PAX</h4>
+              </div>
+              <br />
+              <div class="harga-h4">
+                <h4 id="harga">IDR 1.000.000</h4>
+              </div>
+              <div class="form">
+                <input
+                  type="number"
+                  id="jumlah_tiket"
+                  name="jumlah_tiket"
+                  min="1"
+                  max="10"
+                  value="1"
+                  oninput="hitungHarga()"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- container-kanan2 end -->
+
+        <!-- container-kanan3 start -->
+        <div class="container-kanan3">
+          <div class="total">
+            <h2 id="total-h2">Total Harga</h2>
+          </div>
+        </div>
+        <div class="container-kanan4">
+          <div class="hargaTotal">
+            <h3 id="idr-h3">IDR <span id="totalharga"></span></h3>
+          </div>
+        </div>
+
+        <!-- container-kanan3 end -->
+        <!-- button -->
+        <div>
+          <a href="#" class="btn-beli">Beli</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- content end -->
+
+    <!-- footer -->
+
+    <footer>
+      <div class="footer-top">
+        <div class="logo">
+          <img src="foto/logo.png" alt="logo" />
+        </div>
+        <div class="contact-info">
+          <div class="contact-item">
+            <div class="contact-icon">
+              <i class="fa fa-whatsapp"></i>
+            </div>
+            <div class="contact-text">
+              WhatsApp<br />
+              0858 1150 0888
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon">
+              <i class="fa fa-envelope"></i>
+            </div>
+            <div class="contact-text">
+              Email<br />
+              cs@belitiket.com
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon">
+              <i class="fa fa-phone"></i>
+            </div>
+            <div class="contact-text">
+              Pusat Panggilan<br />
+              0804 1500 878
+            </div>
+          </div>
+        </div>
+        <div class="social-media">
+          <a href="#"><i class="fab fa-facebook"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+      <div class="footer-mid">
+        <div class="location">
+          <h3>Lokasi Event</h3>
+          <ul>
+            <li>Jakarta</li>
+            <li>Bandung</li>
+            <li>Yogyakarta</li>
+            <li>Surabaya</li>
+            <li>Solo</li>
+            <li>Medan</li>
+            <li>Bali</li>
+            <li>Semua Kota</li>
+          </ul>
+        </div>
+        <div class="event-category">
+          <h3>Inspirasi Event</h3>
+          <ul>
+            <li>Festival</li>
+            <li>Konser</li>
+            <li>Olahraga</li>
+            <li>Workshop &amp; Seminar</li>
+            <li>Teater &amp; Drama</li>
+            <li>Atraksi</li>
+            <li>Semua Kategori</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <ul>
+          <li><a href="#">Tentang Kami</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Karir</a></li>
+          <li><a href="#">Kebijakan Privasi</a></li>
+          <li><a href="#">Kebijakan Cookie</a></li>
+          <li><a href="#">Panduan</a></li>
+          <li><a href="#">Hubungi Kami</a></li>
+          <li><a href="#">Pengaturan Cookie</a></li>
+        </ul>
+      </div>
+    </footer>
+
+    <!-- feather icons -->
+    <script>
+      feather.replace();
+    </script>
+    <!-- Javascript -->
+    <script src="script-pesanan.js"></script>
+  </body>
+</html>

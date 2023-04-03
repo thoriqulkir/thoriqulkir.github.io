@@ -33,7 +33,7 @@ loginForm.addEventListener('submit', function(event) {
   loginForm.style.display = 'none';
   // tambahkan kode untuk memproses form registrasi di sini
   
-  window.location.href = 'home.html';
+  window.location.href = 'index.html';
   alert("Berhasil Login!");
 });
 
@@ -42,7 +42,7 @@ registerForm.addEventListener('submit', function(event) {
     registerForm.style.display = 'none';
     // tambahkan kode untuk memproses form registrasi di sini
     
-    window.location.href = 'home.html';
+    window.location.href = 'index.html';
     alert("Registrasi Berhasil!");
   });
 

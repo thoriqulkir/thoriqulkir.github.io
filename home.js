@@ -69,7 +69,12 @@ window.addEventListener("click", function(event) {
     popup.style.display = "none";
   }
 });
-     
+
+var navBar = document.getElementById("navBar");
+function togglebtn() {
+  navBar.classList.toggle("hidemenu");
+}
+
 document.addEventListener('DOMContentLoaded', function() {
     const categoryList = document.getElementById('category-list');
     const prevButton = document.getElementById('category-button-prev');

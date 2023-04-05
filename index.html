@@ -11,76 +11,71 @@
   </head>
 
   <body>
-    <header>
-      <div class="logo">
-        <a href="index.html"><img src="foto/logo.png" alt="Logo Website"></a>
-      </div>
-      <nav>
-        <ul>
-          <li><a href="#blog">Blog</a></li>
-          <li><a href="creator.html">Creator</a></li>
-          <li><a href="about.html">About Us</a></li>
-          <li><a href="#contact.html">Contact</a></li>
-        </ul>
-      </nav>
-      <div class="login">
-        <ul>
-          <li><button class="login-btn" id="login-btn">Login</button></li>
-          <li><button class="regis-btn" id="regis-btn">Register</button></li>
-        </ul>
-      </div>
-    </header>
+   <nav id="navBar" class="na">
+    <img src="foto/logo.png" class="logo">
+    <ul class="nav-links">
+      <li><a href="#blog">Blog</a></li>
+      <li><a href="creator.html">Creator</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="#contact.html">Contact</a></li>
+    </ul>
+    <ul>
+      <a href="#" class="login-btn" id="login-btn">Login</a>
+      <a href="#" class="regis-btn" id="regis-btn">Register</a>
+      <i class="fa-solid fa-bars" onclick="togglebtn()"></i>
+    </ul>
+   </nav>
 
-    <div class="popup" id="popup">
-      <div class="konten-login">
-        <div class="kotak-login">
-          <img class="logo" src="foto/logo.png">
-          <h1>LOG IN</h1>
-          <form action="index.html" method="post" id="login-form">
-            <label for="username">Username : </label>
-            <input type="text" name="username" id="username" placeholder="Masukkan username kamu" required>
-  
-            <label for="password">Password : </label>
-            <input type="password" name="password" id="password" placeholder="Masukkan password kamu" required>
-  
-            <button type="Submit">Log In</button>
-          </form>
-          <p id="link-register">Gak punya akun? Langsung <a href="#">registrasi</a> kuy!</a></p>
-        </div>
-      </div>
-      <div class="konten-regis">
-        <div class="kotak-regis">
-          <img class="logo" src="foto/logo.png">
-          <h1>REGISTRASI</h1>
-          <form action="login.html" method="post" id="register-form">
-            <label for="name">Nama Pengguna : </label>
-            <input type="text" name="first_name" placeholder="Akan digunakan sebagai username akun" required>
-  
-            <label for="email">Email : </label>
-            <input type="email" name="email" placeholder="....@gmail.com" required autocomplete="off">
-  
-            <label for="nomor_telepon">Nomor Telepon : </label>
-            <input type="tel" name="nomor_telepon" placeholder="+62xxx" required autofocus>
-  
-            <label for="password">Password : </label>
-            <input type="password" name="password" id="password" placeholder="Minimal 8 karakter" required minlength="8"
-              maxlength="16">
-  
-            <label for="confirm_password">Konfirmasi Password : </label>
-            <input type="password" name="confirm_password" id="confirmpass" placeholder="Konfirmasi Kembali Password"
-              required minlength="8" maxlength="20">
-  
-            <label for="agreement">
-              <input type="checkbox" id="agreement" name="agreement">
-              Saya menyetujui syarat & ketentuan yang berlaku.
-            </label>
-  
-            <button type="Submit">Daftar</button>
-          </form>
-          <p id="link-login">Udah punya akun? Langsung aja <a href="#">login!</a></p>
-        </div>
+  <div class="popup" id="popup">
+    <div class="konten-login">
+      <div class="kotak-login">
+        <img class="logoA" src="foto/logo.png">
+        <h1>LOG IN</h1>
+        <form action="index.html" method="post" id="login-form">
+          <label for="username">Username : </label>
+          <input type="text" name="username" id="username" placeholder="Masukkan username kamu" required>
+
+          <label for="password">Password : </label>
+          <input type="password" name="password" id="password" placeholder="Masukkan password kamu" required>
+
+          <button type="Submit">Log In</button>
+        </form>
+        <p id="link-register">Gak punya akun? Langsung <a href="#">registrasi</a> kuy!</a></p>
       </div>
     </div>
+    <div class="konten-regis">
+      <div class="kotak-regis">
+        <img class="logoA" src="foto/logo.png">
+        <h1>REGISTRASI</h1>
+        <form action="login.html" method="post" id="register-form">
+          <label for="name">Nama Pengguna : </label>
+          <input type="text" name="first_name" placeholder="Akan digunakan sebagai username akun" required>
+
+          <label for="email">Email : </label>
+          <input type="email" name="email" placeholder="....@gmail.com" required autocomplete="off">
+
+          <label for="nomor_telepon">Nomor Telepon : </label>
+          <input type="tel" name="nomor_telepon" placeholder="+62xxx" required autofocus>
+
+          <label for="password">Password : </label>
+          <input type="password" name="password" id="password" placeholder="Minimal 8 karakter" required minlength="8"
+            maxlength="16">
+
+          <label for="confirm_password">Konfirmasi Password : </label>
+          <input type="password" name="confirm_password" id="confirmpass" placeholder="Konfirmasi Kembali Password"
+            required minlength="8" maxlength="20">
+
+          <label for="agreement">
+            <input type="checkbox" id="agreement" name="agreement">
+            Saya menyetujui syarat & ketentuan yang berlaku.
+          </label>
+
+          <button type="Submit">Daftar</button>
+        </form>
+        <p id="link-login">Udah punya akun? Langsung aja <a href="#">login!</a></p>
+      </div>
+    </div>
+  </div>
 
     <main>
       <div class="description">
